@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+public class GroupAnagramsApp {
   public List<List<String>> groupAnagrams(String[] strs) {
     // Map to hold sorted string as key and list of anagrams as value
     HashMap<String, List<String>> map = new HashMap<>();
@@ -24,7 +24,7 @@ public class Solution {
 
   // ✅ Main method for testing
   public static void main(String[] args) {
-    Solution sol = new Solution();
+    GroupAnagramsApp sol = new GroupAnagramsApp();
     String[] input = { "eat", "tea", "tan", "ate", "nat", "bat" };
     List<List<String>> result = sol.groupAnagrams(input);
     System.out.println(result);
