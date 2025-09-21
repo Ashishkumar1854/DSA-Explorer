@@ -15,7 +15,35 @@ public class Hashing {
 
     System.out.println(map);
 
-    map.put("India", 1000);
-    System.out.print(map);
+    // map.put("India", 1000);
+    // System.out.print(map);
+
+    // // search
+    // if (map.containsKey("china")) {
+    // System.out.println("Key is present ");
+    // } else {
+    // System.out.println("Key is not present ");
+
+    // // check key and value
+    // System.out.println(map.get("China"));
+    // System.out.println(map.get("china"));
+    // }
+
+    // Iteration in hashmap
+    // for(int val : arr)
+    for (Map.Entry<String, Integer> e : map.entrySet()) {
+      System.out.println(e.getKey());
+      System.out.println(e.getValue());
+    }
+
+    // other for loop used
+    Set<String> keys = map.keySet();
+    for (String key : keys) {
+      System.out.println(key + " " + map.get(key));
+    }
+
+    // remove any pair
+    map.remove("China");
+    System.out.println(map);
   }
 }
