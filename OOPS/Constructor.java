@@ -60,7 +60,6 @@
 // // print ,so solve this problem used constuctor overloading
 
 //3) ..........copy constructor ......
-//2) parameterized cosntuctor
 public class Constructor {
   public static void main(String args[]) {
     Student s1 = new Student();
