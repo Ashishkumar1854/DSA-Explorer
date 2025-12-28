@@ -31,3 +31,6 @@ class Chicken extends Animal {
     System.out.println("walks on 2 legs");
   }
 }
+
+// NOTES: how to abstraction concept works on here ? ? ? ? ?
+// ANSWER:
