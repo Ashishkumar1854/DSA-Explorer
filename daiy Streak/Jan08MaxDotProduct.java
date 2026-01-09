@@ -1,5 +1,5 @@
 
-//solve agaian after proper concept 
+//solve agaian after proper concept here streak break guthub i thnk i'm not push this code in github 
 import java.util.*;
 
 public class Jan08MaxDotProduct {
