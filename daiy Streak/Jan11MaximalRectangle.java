@@ -1,5 +1,3 @@
-// Solve again because you just ccopy phase so again slve after proper study concept
-
 import java.util.*;
 
 public class Jan11MaximalRectangle {
