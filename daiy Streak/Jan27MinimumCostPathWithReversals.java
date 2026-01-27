@@ -1,5 +1,5 @@
 
-// again solve streak 3650
+// again solve streak 3650 so solve again with proper concept
 import java.util.*;
 
 public class Jan27MinimumCostPathWithReversals {
@@ -18,7 +18,7 @@ public class Jan27MinimumCostPathWithReversals {
   public int minCost(int n, int[][] edges) {
 
     // Adjacency list: node -> {neighbor, weight}
-    Map<Integer, List<Pair>> adj = new HashMap<>();
+    Map<Integer, List<Pair>> adjs = new HashMap<>();
 
     for (int[] edge : edges) {
       int u = edge[0];
@@ -26,11 +26,11 @@ public class Jan27MinimumCostPathWithReversals {
       int wt = edge[2];
 
       // original edge
-      adj.computeIfAbsent(u, k -> new ArrayList<>())
+      adjs.computeIfAbsent(u, k -> new ArrayList<>())
           .add(new Pair(v, wt));
 
       // reversed edge (cost = 2 * wt)
-      adj.computeIfAbsent(v, k -> new ArrayList<>())
+      adjs.computeIfAbsent(v, k -> new ArrayList<>())
           .add(new Pair(u, 2 * wt));
     }
 
@@ -53,10 +53,10 @@ public class Jan27MinimumCostPathWithReversals {
       if (node == n - 1)
         return d;
 
-      if (!adj.containsKey(node))
+      if (!adjs.containsKey(node))
         continue;
 
-      for (Pair nei : adj.get(node)) {
+      for (Pair nei : adjs.get(node)) {
         int next = nei.node;
         int wt = nei.dist;
 
