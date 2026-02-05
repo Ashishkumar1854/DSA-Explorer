@@ -25,7 +25,7 @@ public class feb05ConstructTransformedArray {
     return result;
   }
 
-  // 🔹 MAIN METHOD (VS CODE RUN)
+  // 🔹 MAIN METHOD (VS CODE RUN)gi
   public static void main(String[] args) {
 
     int[] nums = { 2, -1, 3, 1 };
